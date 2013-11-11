@@ -1,0 +1,36 @@
+{
+  "name": "hubot-computerdogs",
+  "description": "A hubot plugin/scripts to get funny blog post from http://computerdogs.tumblr.com",
+  "version": "0.0.1",
+  "author": "Emmanuel Pinault <emmanuel.pinault@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/epinault/hubot-computerdogs",
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+
+  "engines": {
+    "node": ">=0.10.15",
+    "npm": ">=1.3.5"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/epinault/hubot-computerdogs.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/epinault/hubot-computerdogs/issues"
+  },
+
+  "dependencies": {
+    "hubot":         ">= 2.6.0 < 3.0.0",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "coffee-script": "~1.6",
+    "cheerio": ""
+  },
+
+  "main": "index.coffee"
+}
