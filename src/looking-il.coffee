@@ -13,19 +13,15 @@
 cheerio = require('cheerio')
 
 module.exports = (robot) ->
-  robot.respond /dogs me/i, (msg) ->
-    randevopsMe robot, (url) ->
-      msg.send url 
-
-  robot.hear /dogs/i, (msg) ->
-    randevopsMe robot, (url) ->
-      msg.send url 
+  robot.respond /looking il/i, (msg) ->
+    randevopsMe robot, (message) ->
+      msg.send message
 
 randevopsMe = (robot, cb) ->
-  robot.http("http://computerdogs.tumblr.com/random")
+  robot.http("http://kimjongillookingatthings.tumblr.com/random")
     .get() (err, res, body) ->
       devopsMe robot, res.headers.location, (location) ->
-        cb location 
+        cb location
 
 devopsMe = (robot, location, cb) ->
   robot.http(location)
@@ -33,7 +29,13 @@ devopsMe = (robot, location, cb) ->
 
       $ = cheerio.load(body)
 
-      img = $('img', 'li[class=post]').attr('src')
+      img = $('.photo img').attr('src')
+      caption = $('.photo p').innerText
 
-      cb img
+      message = '''
+        Dear leader #{caption}
+        #{img}
+      '''
+
+      cb message
 
