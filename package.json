@@ -1,8 +1,8 @@
 {
-  "name": "hubot-computerdogs",
-  "description": "A hubot plugin/scripts to get funny blog post from http://computerdogs.tumblr.com",
-  "version": "0.0.1",
-  "author": "Emmanuel Pinault <emmanuel.pinault@gmail.com",
+  "name": "hubot-looking-il",
+  "description": "A hubot plugin/scripts to get funny blog post",
+  "version": "0.0.3",
+  "author": "wycleffsean@gmail.com",
   "license": "MIT",
   "homepage": "https://github.com/epinault/hubot-computerdogs",
 
@@ -18,11 +18,11 @@
   
   "repository": {
     "type": "git",
-    "url": "git://github.com/epinault/hubot-computerdogs.git"
+    "url": "git://github.com/wycleffsean/hubot-looking-il.git"
   },
 
   "bugs": {
-    "url": "https://github.com/epinault/hubot-computerdogs/issues"
+    "url": "https://github.com/wycleffsean/hubot-looking-il/issues"
   },
 
   "dependencies": {
